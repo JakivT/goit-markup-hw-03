@@ -21,7 +21,9 @@
 }
 
 img {
-display:block
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -76,14 +78,11 @@ body {
 
 /* HEADER*/
 
-.header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .header-container {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -100,6 +99,8 @@ font-size: 26px;
 line-height: 1.19;
 text-decoration: none;
 margin-right: 93px;
+display: block;
+padding: 32px 0;
 
 color: var(--primary-text-color);
 }
@@ -121,6 +122,8 @@ color: var(--primary-text-color);
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
+  padding: 32px 0;
 
   color: var(--primary-text-color);
 }
@@ -148,6 +151,8 @@ color: var(--primary-text-color);
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
+display: block;
+padding: 32px 0;
 
 color: var(--secondary-text-dark-color)
 }
@@ -277,12 +282,15 @@ border-radius: 4px;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+  
+.card-team {
+  padding: 30px 0;
+}
 
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
   text-align: center;
 
   color: var(--primary-text-dark-color)
@@ -341,6 +349,9 @@ border-radius: 4px;
  .list-btn .active {
   background-color:  var(--accent-color);
   color: var(--primary-text-light-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
  }
 
  /* PORTFOLIO IMG */
@@ -352,13 +363,20 @@ border-radius: 4px;
   margin-top: 50px;
  }
 
+.portfolio-card {
+  padding: 20px  24px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-top: none;
+
+}
+
  .list-portfolio .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 
   letter-spacing: 0.06em;
-  margin-top: 20px;
 
   color:var(--primary-text-dark-color);
  }
@@ -389,7 +407,9 @@ border-radius: 4px;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  color: var(--primary-text-light-color)
+  color: var(--primary-text-light-color);
+  margin-right: 0;
+  
 }
 
 .footer .logo-decoration {

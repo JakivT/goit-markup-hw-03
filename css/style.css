@@ -54,13 +54,12 @@ ul,ol {
 }
 
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
-    box-sizing: border-box;
-
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
-    font-size: 14px;
+  color: var(--primary-text-color);
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  background-color: var(--primary-background-color);
 }
 
 .container {
@@ -78,11 +77,14 @@ body {
 
 /* HEADER*/
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 
 .header-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -100,7 +102,6 @@ line-height: 1.19;
 text-decoration: none;
 margin-right: 93px;
 display: block;
-padding: 32px 0;
 
 color: var(--primary-text-color);
 }
@@ -145,6 +146,10 @@ color: var(--primary-text-color);
 
 .item-contact {
   margin-right: 50px;
+}
+
+.item-contact:last-child{
+  margin-right: 0;
 }
 
 .list-contact .link{
@@ -231,6 +236,20 @@ border-radius: 4px;
 }
 
 /* ADVANTAGES */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .list-advantages{
   display: flex;
   column-gap: 30px;
@@ -259,6 +278,10 @@ border-radius: 4px;
 
 /* WORK */
 
+.work {
+  padding-top: 0;
+}
+
 .list-work {
   display: flex;
   column-gap: 30px ;
@@ -281,6 +304,7 @@ border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
   
 .card-team {
@@ -420,17 +444,21 @@ border-radius: 4px;
 
 .footer-address {
   font-style: normal;
+  margin-top: 14px;
 }
 
-.footer-list {
-  list-style: none;
+.item-footer {
+  margin-top: 9px;
+}
+
+.item-footer:first-child {
+  margin-top: 0;
 }
 
 .footer .link-adres {
   display: block;
   line-height: 1.71;
   text-decoration: none;
-  margin-top: 14px;
 
   color: var(--primary-text-light-color)
   }
@@ -439,7 +467,6 @@ border-radius: 4px;
   display: block;
   line-height: 1.71;
   text-decoration: none;
-  margin-top: 9px;
 
   color: var(--secondary-text-light-color)
 }
